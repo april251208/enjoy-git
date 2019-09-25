@@ -1,12 +1,15 @@
 package enjoy.git;
 
-/**
- * @author 【享学课堂】 King老师
- */
+import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
+/**
+ * @author devel
+ */
+
 @RestController
+@EnableAutoConfiguration
 public class UserController {
     @RequestMapping("/hello")
     public Object sayHello() {
